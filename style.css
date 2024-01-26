@@ -1,0 +1,115 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #3a68b7;
+    /* Blue */
+    --font-type: 'Roboto', sans-serif;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+
+
+body {
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.form {
+    width: 80%;
+    max-width: 32rem;
+    /* background-color: white; */
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.264) .5rem, white .5rem);
+}
+
+.form__fieldset {
+    border: none;
+    display: flex;
+    flex-direction: column;
+    gap: .25em;
+    padding: 1rem;
+}
+
+.form__title {
+    font-size: 2rem;
+    color: var(--primary-color);
+    font-family: var(--font-type);
+    font-weight: 300;
+    padding-top: 2rem;
+}
+
+.form__label {
+    font-size: .8rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-family: var(--font-type);
+}
+
+.form__input {
+    padding: .5em 0;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 0;
+    border-bottom: 1px solid var(--primary-color);
+    margin-bottom: .8rem;
+    outline: none;
+    transition: padding-left .08s;
+    /* padrão é easy */
+
+}
+
+.form__input:focus {
+    outline: 2px solid var(--primary-color);
+    padding-left: .3rem;
+}
+
+
+.btn {
+    font-size: 1rem;
+    padding: .8rem 1.2rem;
+    color: white;
+    font-family: var(--font-type);
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-decoration: none;
+    outline: none;
+    border: none;
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    cursor: pointer;
+    border-radius: 3px;
+    box-shadow: 2px 2px 2px var(--primary-color);
+
+}
+
+.btn-secondary {
+    color: var(--primary-color)
+}
+
+.form__action {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.form__action__aside {
+    font-size: 1rem;
+    flex-grow: 1;
+    text-align: right;
+    text-decoration: none;
+    color: red;
+}
+
+.form__action__aside a {
+    text-decoration: none;
+    color: inherit;
+}
